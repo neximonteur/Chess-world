@@ -1,0 +1,144 @@
+.leaderboard {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.leaderboard-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.leaderboard-header h1 {
+  background: linear-gradient(135deg, var(--accent) 0%, #0055ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+.leaderboard-header p {
+  color: var(--text-secondary);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.leaderboard-filters {
+  margin-bottom: 20px;
+}
+
+.filter-select {
+  min-width: 200px;
+}
+
+.leaderboard-info {
+  background: var(--bg-tertiary);
+  padding: 15px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  font-size: 13px;
+  border: 1px solid var(--border);
+}
+
+.leaderboard-info p {
+  margin: 0;
+  color: var(--text-secondary);
+}
+
+.leaderboard-info strong {
+  color: var(--accent);
+}
+
+.leaderboard-table-container {
+  background: var(--bg-tertiary);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+}
+
+.leaderboard-table {
+  width: 100%;
+}
+
+.leaderboard-table thead {
+  background: var(--bg-secondary);
+  border-bottom: 1px solid var(--accent);
+}
+
+.leaderboard-table th {
+  padding: 12px 15px;
+  text-align: left;
+  font-weight: 600;
+  color: var(--accent);
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+}
+
+.leaderboard-table tbody tr {
+  border-bottom: 1px solid var(--border);
+  transition: all 0.2s ease;
+}
+
+.leaderboard-table tbody tr:hover {
+  background: var(--bg-secondary);
+}
+
+.leaderboard-table tbody tr.current-user {
+  background: rgba(0, 212, 255, 0.1);
+  border-left: 3px solid var(--accent);
+}
+
+.leaderboard-table td {
+  padding: 12px 15px;
+  font-size: 13px;
+}
+
+.rank-column {
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.player-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.player-avatar {
+  font-size: 18px;
+}
+
+.player-name {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.badge {
+  background: var(--accent);
+  color: var(--bg-primary);
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 10px;
+  font-weight: 600;
+  margin-left: 5px;
+}
+
+.ratio {
+  color: var(--success);
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .leaderboard-table {
+    font-size: 12px;
+  }
+
+  .leaderboard-table th,
+  .leaderboard-table td {
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+}
